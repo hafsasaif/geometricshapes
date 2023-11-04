@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="GeometricShapes">
+  <ClassDiagramComponents>
+    <Class name="Circle" package="geometricshapes" visibility="public" xPosition="20.0" yPosition="425.0">
+      <Fields>
+        <Field name="radius" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="vlaue"/>
+          <Argument type="boolean" name="isArea"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRadius" returnType="double" visibility="public"/>
+        <Method name="setRadius" returnType="void" visibility="public"/>
+        <Method name="findArea" returnType="double" visibility="public"/>
+        <Method name="findPerimeter" returnType="double" visibility="public"/>
+        <Method name="findRadius" returnType="double" visibility="public">
+          <Argument type="double" name="value"/>
+          <Argument type="boolean" name="isArea"/>
+        </Method>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cone" package="geometricshapes" visibility="public" xPosition="917.0" yPosition="730.0">
+      <Fields>
+        <Field name="Height" type="double" visibility="private"/>
+        <Field name="radius" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="Height"/>
+          <Argument type="double" name="radius"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getHeight" returnType="double" visibility="public"/>
+        <Method name="setHeight" returnType="void" visibility="public"/>
+        <Method name="getRadius" returnType="double" visibility="public"/>
+        <Method name="setRadius" returnType="void" visibility="public"/>
+        <Method name="calculateSurfaceArea" returnType="double" visibility="public"/>
+        <Method name="calculateVolume" returnType="double" visibility="public"/>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cube" package="geometricshapes" visibility="public" xPosition="1400.0" yPosition="28.0">
+      <Fields>
+        <Field name="sideLength" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="value"/>
+          <Argument type="boolean" name="isVolume"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSideLength" returnType="double" visibility="public"/>
+        <Method name="setSideLength" returnType="void" visibility="public"/>
+        <Method name="calculateSurfaceArea" returnType="double" visibility="public"/>
+        <Method name="calculateVolume" returnType="double" visibility="public"/>
+        <Method name="findSideLength" returnType="double" visibility="public">
+          <Argument type="double" name="value"/>
+          <Argument type="boolean" name="isVolume"/>
+        </Method>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cuboid" package="geometricshapes" visibility="public" xPosition="591.0" yPosition="169.0">
+      <Fields>
+        <Field name="Length" type="double" visibility="private"/>
+        <Field name="Height" type="double" visibility="private"/>
+        <Field name="breath" type="double" visibility="private"/>
+        <Field name="shapeName" type="String" visibility="private"/>
+        <Field name="UserName" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="Length"/>
+          <Argument type="double" name="Height"/>
+          <Argument type="double" name="breath"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getLength" returnType="double" visibility="public"/>
+        <Method name="getBreath" returnType="double" visibility="public"/>
+        <Method name="setBreath" returnType="void" visibility="public"/>
+        <Method name="setLength" returnType="void" visibility="public"/>
+        <Method name="getHeight" returnType="double" visibility="public"/>
+        <Method name="setHeight" returnType="void" visibility="public"/>
+        <Method name="calculateSurfaceArea" returnType="double" visibility="public"/>
+        <Method name="calculateVolume" returnType="double" visibility="public"/>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+        <Method name="ShapeName" returnType="void" visibility="private">
+          <Argument type="String" name="shapeName"/>
+        </Method>
+        <Method name="UserName" returnType="void" visibility="private">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="getuName" returnType="String" visibility="private"/>
+        <Method name="getsName" returnType="String" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cylinder" package="geometricshapes" visibility="public" xPosition="1167.0" yPosition="730.0">
+      <Fields>
+        <Field name="height" type="double" visibility="private"/>
+        <Field name="radius" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="height"/>
+          <Argument type="double" name="radius"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getHeight" returnType="double" visibility="public"/>
+        <Method name="setHeight" returnType="void" visibility="public"/>
+        <Method name="getRadius" returnType="double" visibility="public"/>
+        <Method name="setRadius" returnType="void" visibility="public"/>
+        <Method name="calculateSurfaceArea" returnType="double" visibility="public"/>
+        <Method name="calculateVolume" returnType="double" visibility="public"/>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="GeometricShapes" package="geometricshapes" visibility="public" xPosition="636.0" yPosition="679.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Octagon" package="geometricshapes" visibility="public" xPosition="20.0" yPosition="1022.0">
+      <Fields>
+        <Field name="sideLength" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="value"/>
+          <Argument type="boolean" name="isArea"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSideLength" returnType="double" visibility="public"/>
+        <Method name="setSideLength" returnType="void" visibility="public"/>
+        <Method name="findSideLength" returnType="double" visibility="public">
+          <Argument type="double" name="value"/>
+          <Argument type="boolean" name="isArea"/>
+        </Method>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+        <Method name="findArea" returnType="double" visibility="public"/>
+        <Method name="findPerimeter" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pyramid" package="geometricshapes" visibility="public" xPosition="1432.0" yPosition="721.0">
+      <Fields>
+        <Field name="Length" type="double" visibility="private"/>
+        <Field name="Height" type="double" visibility="private"/>
+        <Field name="side" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="Length"/>
+          <Argument type="double" name="Height"/>
+          <Argument type="double" name="side"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getLength" returnType="double" visibility="public"/>
+        <Method name="setLength" returnType="void" visibility="public"/>
+        <Method name="getHeight" returnType="double" visibility="public"/>
+        <Method name="setHeight" returnType="void" visibility="public"/>
+        <Method name="getSide" returnType="double" visibility="public"/>
+        <Method name="setSide" returnType="void" visibility="public"/>
+        <Method name="calculateSurfaceArea" returnType="double" visibility="public"/>
+        <Method name="calculateVolume" returnType="double" visibility="public"/>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Square" package="geometricshapes" visibility="public" xPosition="20.0" yPosition="721.0">
+      <Fields>
+        <Field name="sideLength" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="value"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSideLength" returnType="double" visibility="public"/>
+        <Method name="setSideLength" returnType="void" visibility="public">
+          <Argument type="double" name="sideLength"/>
+        </Method>
+        <Method name="setSideLength" returnType="void" visibility="public"/>
+        <Method name="findArea" returnType="double" visibility="public"/>
+        <Method name="findPerimeter" returnType="double" visibility="public"/>
+        <Method name="findSquareSideLength" returnType="double" visibility="public">
+          <Argument type="double" name="value"/>
+        </Method>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tetrahedron" package="geometricshapes" visibility="public" xPosition="1400.0" yPosition="293.0">
+      <Fields>
+        <Field name="side" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="Length"/>
+          <Argument type="double" name="Height"/>
+          <Argument type="double" name="side"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSide" returnType="double" visibility="public"/>
+        <Method name="setSide" returnType="void" visibility="public"/>
+        <Method name="calculateSurfaceArea" returnType="double" visibility="public"/>
+        <Method name="calculateVolume" returnType="double" visibility="public"/>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ThreeDimensionShape" package="geometricshapes" visibility="public" isAbstract="true" xPosition="1046.0" yPosition="20.0">
+      <Fields>
+        <Field name="uName" type="String" visibility="private"/>
+        <Field name="sName" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="UserName" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="ShapeName" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+        <Method name="calculateSurfaceArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="calculateVolume" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="getuName" returnType="String" visibility="public"/>
+        <Method name="getsName" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Triangle" package="geometricshapes" visibility="public" xPosition="461.0" yPosition="939.0">
+      <Fields>
+        <Field name="sideLength" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="value"/>
+          <Argument type="boolean" name="isArea"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSideLength" returnType="double" visibility="public"/>
+        <Method name="setSideLength" returnType="void" visibility="public"/>
+        <Method name="findSideLength" returnType="double" visibility="public">
+          <Argument type="double" name="value"/>
+          <Argument type="boolean" name="isArea"/>
+        </Method>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+        <Method name="findArea" returnType="double" visibility="public"/>
+        <Method name="findPerimeter" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TwoDimensionShape" package="geometricshapes" visibility="public" isAbstract="true" xPosition="345.0" yPosition="37.0">
+      <Fields>
+        <Field name="uName" type="String" visibility="private"/>
+        <Field name="sName" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="findArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="findPerimeter" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="UserName" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="ShapeName" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="getuName" returnType="String" visibility="public"/>
+        <Method name="getsName" returnType="String" visibility="public"/>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Shape" package="geometricshapes" visibility="public" xPosition="672.0" yPosition="20.0">
+      <Methods>
+        <Method name="UserName" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="ShapeName" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="summaryPrint" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="geometricshapes.Circle" target="geometricshapes.TwoDimensionShape"/>
+    <IsRelation name="is" source="geometricshapes.Cube" target="geometricshapes.ThreeDimensionShape"/>
+    <IsRelation name="is" source="geometricshapes.Triangle" target="geometricshapes.TwoDimensionShape"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="geometricshapes.TwoDimensionShape" target="geometricshapes.Shape"/>
+    <IsRelation name="is" source="geometricshapes.Cone" target="geometricshapes.ThreeDimensionShape"/>
+    <IsRelation name="is" source="geometricshapes.Cylinder" target="geometricshapes.ThreeDimensionShape"/>
+    <IsRelation name="is" source="geometricshapes.Pyramid" target="geometricshapes.ThreeDimensionShape"/>
+    <IsRelation name="is" source="geometricshapes.Square" target="geometricshapes.TwoDimensionShape"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="geometricshapes.ThreeDimensionShape" target="geometricshapes.Shape"/>
+    <IsRelation name="is" source="geometricshapes.Tetrahedron" target="geometricshapes.ThreeDimensionShape"/>
+    <IsRelation name="is" source="geometricshapes.Octagon" target="geometricshapes.TwoDimensionShape"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
